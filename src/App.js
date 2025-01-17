@@ -3,8 +3,8 @@ import { useEffect } from "react";
 import { Home } from "./Components/Home";
 import { About } from "./Components/About";
 import Gallery from "./Components/Gallery";
-import Services from "./Components/Services";
-import { ToastContainer, toast } from "react-toastify";
+import Products from "./Components/Products";
+import { ToastContainer } from "react-toastify";
 import Contact from "./Components/Contact";
 import INFO from "./Components/INFO";
 import Modal from "react-modal";
@@ -43,7 +43,7 @@ function App() {
                 <SmartSwitchSection />
                 <Video />
                 <HowItWorks />
-                <Services />
+                <Products />
                 <Gallery />
                 <Contact />
                 <INFO />

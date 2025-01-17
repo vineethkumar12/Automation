@@ -1,7 +1,6 @@
 import React from "react";
 import "./SmartSwitchSection.css";
-import smartSwitchImage from "../images/smart-switch.png"; // Replace with your image path
-
+import smartSwitchImage from "../images/smart-switch.png";
 const SmartSwitchSection = () => {
   return (
     <section className="smart_switch_section">
@@ -11,9 +10,8 @@ const SmartSwitchSection = () => {
             src="https://giphy.com/embed/WTu5YH9J0kyVtymRIe"
             width="480"
             height="269"
-            frameBorder="0"
             className="giphy-embed iframe-pointer-blocked"
-            allowFullScreen
+            title="wifi"
           ></iframe>
         </div>
         <div className="row">

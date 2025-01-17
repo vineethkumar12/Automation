@@ -14,7 +14,7 @@
 }
 
 .iframe-pointer-blocked {
-  pointer-events: none; /* Disables all pointer interactions */
+  pointer-events: none;
 }
 
 .giphy-embed {

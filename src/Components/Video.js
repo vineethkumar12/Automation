@@ -1,6 +1,6 @@
 import React from "react";
-import "./video.css"; // Add custom styling here
-import video1 from "../Videos/video4.mp4"; // Import the video
+import "./video.css";
+import video1 from "../Videos/video4.mp4";
 
 const VideoSection = () => {
   return (

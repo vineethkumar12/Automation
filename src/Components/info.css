@@ -96,11 +96,17 @@
     width: 150px;
     height: 150px;
   }
+  .row {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 480px) {
   .info_section {
     padding: 80px 20px;
+  }
+  .row {
+    margin-top: 20px;
   }
 
   .info_section .info_contact a {

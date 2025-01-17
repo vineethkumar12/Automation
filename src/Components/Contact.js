@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import "./Contact.css";
-import { toast } from "react-toastify"; // For showing notifications
-import emailjs from "@emailjs/browser"; // For sending emails
+import { toast } from "react-toastify";
+import emailjs from "@emailjs/browser";
 
 const ContactSection = () => {
   const form = useRef();
@@ -81,7 +81,7 @@ const ContactSection = () => {
                   />
                 </div>
                 <div className="btn_box">
-                  <button type="submit">SEND</button> {/* Added submit type */}
+                  <button type="submit">SEND</button>
                 </div>
               </form>
             </div>

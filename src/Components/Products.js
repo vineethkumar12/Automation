@@ -2,8 +2,8 @@ import React from "react";
 import s1 from "../images/curtain-switch.png";
 import s2 from "../images/motion-sensor-product.jpg";
 import s3 from "../images/ir.jpg";
-import "./Services.css";
-const ServiceSection = () => {
+import "./Products.css";
+const Products = () => {
   const services = [
     {
       imgSrc: s1,
@@ -57,4 +57,4 @@ const ServiceBox = ({ imgSrc, title, description }) => {
   );
 };
 
-export default ServiceSection;
+export default Products;
