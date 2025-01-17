@@ -34,7 +34,7 @@ function App() {
 
         <Routes>
           <Route
-            path="/Automation"
+            path="/"
             element={
               <>
                 <Home />
