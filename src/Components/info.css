@@ -1,5 +1,5 @@
 .info_section {
-  background-color: rgb(128, 128, 128, 0.3);
+  background-color: rgba(128, 128, 128, 0.3);
   color: #131212;
   padding: 165px 0 75px 0;
   border-radius: 10px;
@@ -15,9 +15,9 @@
 
 .row {
   display: flex;
-  justify-content: space-between; /* Spread the items evenly */
-  align-items: center; /* Align the items vertically */
-  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .logo-box {
@@ -29,13 +29,14 @@
 
 .col-md-6,
 .col-lg-3 {
-  flex: 1 1 30%; /* Ensures the items are evenly spaced in the row */
+  flex: 1 1 30%;
   margin: 10px;
 }
 
 .info_section .info_contact a {
   display: flex;
   align-items: center;
+
   color: #1a1919;
   margin-bottom: 10px;
 }
@@ -74,4 +75,45 @@
 .logo-size-info {
   width: 200px;
   height: 200px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .info_section {
+    padding: 120px 20px;
+  }
+  .info_section .info_contact a {
+    flex-direction: column;
+  }
+
+  .col-md-6,
+  .col-lg-3 {
+    flex: 1 1 45%;
+    margin: 10px;
+  }
+
+  .logo-size-info {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .info_section {
+    padding: 80px 20px;
+  }
+
+  .info_section .info_contact a {
+    flex-direction: column;
+  }
+
+  .col-md-6,
+  .col-lg-3 {
+    flex: 1 1 100%;
+  }
+
+  .logo-size-info {
+    width: 120px;
+    height: 120px;
+  }
 }

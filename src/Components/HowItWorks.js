@@ -30,9 +30,9 @@ const HowItWorks = () => (
   <section className="how_it_works_section">
     <div className="container">
       <h2 className="section_title">How It Works</h2>
-      <div className="tiles_row" data-aos="zoom-in">
+      <div className="tiles_row">
         {tiles.map((tile, index) => (
-          <div className="tile" key={index}>
+          <div className="tile" data-aos="zoom-in" key={index}>
             <img src={tile.image} alt={tile.alt} className="tile_image" />
             <p className="tile_description">{tile.description}</p>
           </div>

@@ -297,6 +297,7 @@ h2 {
   padding: 45px;
   border-radius: 10px;
 }
+
 .slider_section .detail-box .inner_detail-box a {
   text-decoration: none;
 }
@@ -317,7 +318,6 @@ h2 {
   color: #000000;
   border-radius: 5px;
   border: 1px solid #070707;
-
   margin-top: 10px;
   border: 2px dashed #f1ebeb;
   filter: contrast(1);
@@ -327,6 +327,48 @@ h2 {
   cursor: pointer;
   color: #fbf4f4;
   background-color: #000000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .slider_section .detail-box {
+    padding: 0 15px; /* Add padding for better layout */
+  }
+
+  .slider_section .detail-box .inner_detail-box {
+    padding: 30px; /* Adjust padding on smaller screens */
+    margin-top: -40px;
+  }
+
+  .slider_section .detail-box h1 {
+    font-size: 1.8rem; /* Reduced font size */
+  }
+
+  .slider_section .detail-box p {
+    font-size: 1rem; /* Smaller paragraph font size */
+  }
+
+  .slider_section .detail-box .slider-link {
+    padding: 8px 30px; /* Reduced button padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .slider_section .detail-box .inner_detail-box {
+    padding: 20px; /* Further reduced padding for smaller screens */
+  }
+
+  .slider_section .detail-box h1 {
+    font-size: 1.5rem; /* Smaller heading font size */
+  }
+
+  .slider_section .detail-box p {
+    font-size: 0.9rem; /* Adjusted paragraph font size */
+  }
+
+  .slider_section .detail-box .slider-link {
+    padding: 8px 20px; /* Adjusted button padding */
+  }
 }
 
 .slider_section .carousel-control-prev,
