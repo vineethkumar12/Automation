@@ -1,66 +1,44 @@
 import React from "react";
 import "./info.css";
-
+import logo from "../images/logo.png";
+import Brochure from "./Brochure.pdf";
 const InfoSection = () => {
   return (
-    <section to="info" className="info_section">
+    <section id="info" className="info_section">
       <div className="container">
         <div className="row info_main_row">
-          <div className="col-md-6 col-lg-3">
-            <div className="info_insta">
-              <h4>
-                <a href="index.html" className="navbar-brand m-0 p-0">
-                  <span> Shapel </span>
-                </a>
-              </h4>
-              <p className="mb-0">
-                Asperiores at, error, delectus aut voluptatem provident cum quam
-                magni necessitatibus molestias eveniet reprehenderit maiores
-                voluptate.
-              </p>
-            </div>
+          <div className="logo-box">
+            <img src={logo} className="logo-size-info" alt="Company Logo" />
           </div>
+
           <div className="col-md-6 col-lg-3">
             <div className="info_detail">
               <h4>Company</h4>
-              <p className="mb-0">
-                when looking at its layout. The point of using Lorem Ipsum is
-                that it has a more-or-less normal distribution of letters, as
-                opposed to
-              </p>
+              <p></p>
+              <a href={Brochure} download="PAT Home Automation Brochure">
+                Download Broucher
+              </a>
             </div>
           </div>
+
           <div className="col-md-6 col-lg-3">
             <h4>Contact Us</h4>
             <div className="info_contact">
-              <a href="">
-                <i className="fa fa-map-marker" aria-hidden="true"></i>
-                <span> Location </span>
-              </a>
-              <a href="">
+              <a href="tel:+919030983040">
                 <i className="fa fa-phone" aria-hidden="true"></i>
-                <span> Call +01 1234567890 </span>
+                <span> +91 9030983040 </span>
               </a>
-              <a href="">
+              <a href="mailto:bharath.patiot@gmail.com">
                 <i className="fa fa-envelope"></i>
-                <span> demo@gmail.com </span>
+                <span> bharath.patiot@gmail.com</span>
               </a>
-            </div>
-          </div>
-          <div className="col-md-6 col-lg-3">
-            <h4>Follow Us</h4>
-            <div className="social_box">
-              <a href="">
-                <i className="fa fa-facebook" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i className="fa fa-twitter" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i className="fa fa-linkedin" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i className="fa fa-instagram" aria-hidden="true"></i>
+              <a
+                href="https://maps.app.goo.gl/2feVz9LNJCrWAxsr8"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa fa-map-marker" aria-hidden="true"></i>
+                <span>Location us</span>
               </a>
             </div>
           </div>

@@ -1,30 +1,17 @@
 import "./style.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import img from "../images/slider-bg.jpg";
+import img from "../images/side-view-hand-with-smartphone-smart-light.jpg";
 import React, { useRef } from "react";
 import { Link } from "react-scroll";
 import Slider from "react-slick";
 import "./responsive.css";
-
+import logo from "../images/logo.png";
+import "./style.css";
 export const Home = () => {
   const sliderRef = useRef(null);
-  const links = ["home", "about", "gallery", "services", "contact"];
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
-
-  const goToPrev = () => {
-    sliderRef.current.slickPrev();
-  };
-
-  const goToNext = () => {
-    sliderRef.current.slickNext();
-  };
+  const links = ["home", "about", "features", "gallery", "products", "contact"];
+  const settings = {};
 
   const openNav = () => {
     document.getElementById("myNav").classList.toggle("menu_width");
@@ -39,7 +26,9 @@ export const Home = () => {
         <div className="container-fluid">
           <nav className="navbar navbar-expand-lg custom_nav-container">
             <a className="navbar-brand" href="/">
-              <span>PAT</span>
+              <div className="img-box-logo">
+                <img src={logo} className="logo-size" alt="..." />
+              </div>
             </a>
             <div className="" id="">
               <div className="custom_menu-btn">
@@ -56,8 +45,6 @@ export const Home = () => {
                         onClick={openNav}
                         to={value}
                         className="Link"
-                        smooth={true}
-                        duration={500}
                       >
                         {value}
                       </Link>
@@ -73,36 +60,13 @@ export const Home = () => {
       <Slider ref={sliderRef} {...settings}>
         <div className="carousel-item">
           <div className="img_container">
-            <div className="img-box">
-              <img src={img} className="" alt="..." />
-            </div>
-          </div>
-        </div>
-        <div className="carousel-item">
-          <div className="img_container">
-            <div className="img-box">
-              <img src={img} className="" alt="..." />
-            </div>
-          </div>
-        </div>
-        <div className="carousel-item">
-          <div className="img_container">
-            <div className="img-box">
-              <img src={img} className="" alt="..." />
+            <div className="img">
+              <img src={img} className="bg" alt="..." />
             </div>
           </div>
         </div>
       </Slider>
-      <div className="carousel_btn_box">
-        <button className="carousel-control-prev" onClick={goToPrev}>
-          <i className="fa fa-arrow-left" aria-hidden="true"></i>
-          <span className="sr-only">Previous</span>
-        </button>
-        <button className="carousel-control-next" onClick={goToNext}>
-          <i className="fa fa-arrow-right" aria-hidden="true"></i>
-          <span className="sr-only">Next</span>
-        </button>
-      </div>
+
       <div className="detail-box">
         <div className="col-md-8 col-lg-6 mx-auto">
           <div className="inner_detail-box">
@@ -117,9 +81,12 @@ export const Home = () => {
               effortless living with PAT's innovative technology.
             </p>
             <div>
-              <a href="/" className="slider-link">
+              <Link to="contact" className="slider-link">
                 CONTACT US
-              </a>
+              </Link>
+            </div>
+            <div style={{ marginTop: "10px", fontFamily: "cursive" }}>
+              <h5>Home automation makes life simpler, safer, and smarter</h5>
             </div>
           </div>
         </div>

@@ -1,7 +1,8 @@
 .info_section {
-  background-color: #262939;
-  color: #ffffff;
+  background-color: rgb(128, 128, 128, 0.3);
+  color: #131212;
   padding: 165px 0 75px 0;
+  border-radius: 10px;
 }
 
 .info_section.innerpage_info_section {
@@ -12,14 +13,30 @@
   margin-bottom: 15px;
 }
 
-.info_section .info_contact a {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.row {
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  justify-content: space-between; /* Spread the items evenly */
+  align-items: center; /* Align the items vertically */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.logo-box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  color: #ffffff;
+}
+
+.col-md-6,
+.col-lg-3 {
+  flex: 1 1 30%; /* Ensures the items are evenly spaced in the row */
+  margin: 10px;
+}
+
+.info_section .info_contact a {
+  display: flex;
+  align-items: center;
+  color: #1a1919;
   margin-bottom: 10px;
 }
 
@@ -28,28 +45,18 @@
   width: 25px;
 }
 
-.info_section .info_contact a:hover:hover {
+.info_section .info_contact a:hover {
   color: #e45441;
 }
 
 .info_section .social_box {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
 .info_section .social_box a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   width: 50px;
   height: 50px;
@@ -62,4 +69,9 @@
 .info_section .social_box a:hover {
   color: #e45441;
   border-color: #e45441;
+}
+
+.logo-size-info {
+  width: 200px;
+  height: 200px;
 }

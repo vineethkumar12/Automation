@@ -29,6 +29,7 @@
 
 .service_section .box .detail-box {
   background-color: #3a3f58;
+  border-radius: 5%;
   color: #ffffff;
   padding: 97.5px 25px 25px 25px;
 }

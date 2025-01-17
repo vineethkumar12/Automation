@@ -1,6 +1,7 @@
 import React from "react";
-import aboutImage from "../images/about-img.jpg";
+import aboutImage from "../images/aboutimage2.jpeg";
 import "./About.css";
+import { Link } from "react-router-dom";
 export const About = () => {
   return (
     <div id="about" data-aos="fade-up">
@@ -24,10 +25,10 @@ export const About = () => {
                   switches. Our team in Hyderabad keeps improving existing
                   products and exploring new tech. We make everything in-house,
                   led by passionate engineers, to make your life easier and
-                  affordable. Join us in embracing the future with AutomateEm
-                  for a simpler, smarter way of living.
+                  affordable. Join us in embracing the future with PAT IOT for a
+                  simpler, smarter way of living.
                 </p>
-                <a href="/"> Read More </a>
+                <Link to="/aboutcompany">Read More</Link>
               </div>
             </div>
           </div>

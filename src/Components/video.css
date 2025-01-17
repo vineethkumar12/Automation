@@ -1,0 +1,24 @@
+.custom-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.custom-controls button {
+  background-color: #e45441;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.custom-controls button:hover {
+  background-color: #d44130;
+  width: 100%;
+}
+
+.video_container {
+  border: none;
+}
