@@ -14,7 +14,7 @@ import SmartSwitchSection from "./Components/SmartSwitchSection";
 import FeaturesSection from "./Components/FeaturesSection";
 import HowItWorks from "./Components/HowItWorks";
 import Video from "./Components/Video";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import AboutCompany from "./Components/AboutCompany";
 
 Modal.setAppElement("#root");
