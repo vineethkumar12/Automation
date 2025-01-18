@@ -43,6 +43,11 @@ const InfoSection = () => {
             </div>
           </div>
         </div>
+        <div className="footer-2025">
+          <footer>
+            <p>© 2025 PAT IoT Solutions. All Rights Reserved.</p>
+          </footer>
+        </div>
       </div>
     </section>
   );

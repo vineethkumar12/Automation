@@ -76,7 +76,10 @@
   width: 200px;
   height: 200px;
 }
-
+.footer-2025 {
+  margin-top: 50px;
+  margin-bottom: -100px;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
   .info_section {
@@ -121,5 +124,8 @@
   .logo-size-info {
     width: 120px;
     height: 120px;
+  }
+  .footer-2025 {
+    display: none;
   }
 }
