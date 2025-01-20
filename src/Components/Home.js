@@ -10,7 +10,7 @@ import logo from "../images/logo.png";
 import "./style.css";
 export const Home = () => {
   const sliderRef = useRef(null);
-  const links = ["home", "about", "features", "gallery", "products", "contact"];
+  const links = ["home", "about", "features", "products", "gallery", "contact"];
   const settings = {};
 
   const openNav = () => {
@@ -32,13 +32,13 @@ export const Home = () => {
             </a>
             <div className="" id="">
               <div className="custom_menu-btn">
-                <button onClick={openNav}>
+                <button className="b" onClick={openNav}>
                   <span className="s-1"> </span>
                   <span className="s-2"> </span>
                   <span className="s-3"> </span>
                 </button>
                 <div id="myNav" className="overlay">
-                  <div className="overlay-content">
+                  <div className="overlay-content ">
                     {links.map((value, index) => (
                       <Link
                         key={index}
